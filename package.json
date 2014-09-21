@@ -1,0 +1,27 @@
+{
+  "name": "drag",
+  "version": "0.0.0",
+  "description": "motion fluid resistance",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bredele/drag.git"
+  },
+  "keywords": [
+    "drag",
+    "newton",
+    "fluid"
+  ],
+  "author": "Olivier Wietrich <olivier.wietrich@gmail.com> (http://github.com/bredele)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bredele/drag/issues"
+  },
+  "homepage": "https://github.com/bredele/drag"
+}
