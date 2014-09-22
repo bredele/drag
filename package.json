@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/bredele/drag/issues"
   },
-  "homepage": "https://github.com/bredele/drag"
+  "homepage": "https://github.com/bredele/drag",
+  "devDependencies": {
+    "mocha": "^1.21.4"
+  }
 }
