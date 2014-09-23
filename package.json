@@ -26,5 +26,8 @@
   "homepage": "https://github.com/bredele/drag",
   "devDependencies": {
     "mocha": "^1.21.4"
+  },
+  "dependencies": {
+    "air": "git://github.com/bredele/air"
   }
 }

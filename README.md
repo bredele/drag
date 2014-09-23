@@ -1,7 +1,7 @@
 drag
 ====
 
-fluid resistance
+fluid resistance (20 °C dray air by default).
 
 ![drag](drag.png)
 
