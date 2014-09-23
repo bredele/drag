@@ -25,7 +25,8 @@
   },
   "homepage": "https://github.com/bredele/drag",
   "devDependencies": {
-    "mocha": "^1.21.4"
+    "mocha": "^1.21.4",
+    "round": "git://github.com/bredele/round"
   },
   "dependencies": {
     "air": "git://github.com/bredele/air"
