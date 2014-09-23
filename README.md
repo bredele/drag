@@ -16,7 +16,7 @@ var area = 0.0001 * Math.PI * 15 * 15;
 
 
 drag(10, 0.47, area);
-// => 2.0001 N (or kg.m.s-1)
+// => 2.0001 N (or kg.m.s-2)
 
 
 ```
