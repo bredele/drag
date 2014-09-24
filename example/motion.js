@@ -37,7 +37,7 @@ var mass = 0.1;
  * Collision restitution.
  */
 
-var restitution =  -0.7;
+var restitution =  - 0.7;
 
 
 /**
@@ -70,32 +70,39 @@ var y = 200;
 var vx = 10;
 var vy = 0;
 
+function abs(val) {
+  return val / Math.abs(val) || 1;
+}
+
 /**
  * [kick description]
  * @return {[type]} [description]
  */
 
 function move() {
-	var fx = - drag(vx, 0.47, area);
-	var fy = - drag(vy, 0.47, area);
+	var fx = - drag(vx, cd, area) * abs(vx);
+	var fy = - drag(vy, cd, area) * abs(vy);
+
+  var t = 1 / 60;
 
 	var ax = fx / mass;
-	var ay = ag + fy /mass;
+	var ay =  ag + fy /mass;
 
-	vx += ax * 0.016;
-	vy += ay * 0.016;
+	vx += ax * t;
+	vy += ay * t;
+  
 
-	x += vx * 0.016 * 100;
-	y += vy * 0.016 * 100;
+	x += vx * t * 200;
+	y += vy * t * 200;
 
-	if ( y > height - radius) {
+	if ( y > height - 2 * radius) {
 		vy *= restitution;
-	  y = height - radius;
+	  y = height - 2 * radius;
 	}
 
-	if (x > width - radius) {
+	if (x > width - 2 * radius) {
 		vx *= restitution;
-		x = width - radius;
+		x = width - 2 * radius;
 	}
 
 	if (x < radius) {
@@ -117,10 +124,11 @@ function move() {
  */
 
 function random() {
-	var max = 15;
+	var max = 75;
 	var min = 5;
   return Math.random() * (max - min) + min;
 }
+
 
 
 /**
@@ -131,6 +139,8 @@ function random() {
  * @api private
  */
 
-function position() {
+function position(left, top) {
+	//ball.setAttribute('style', '-webkit-transform:translate3d(' + left + 'px,' + top + 'px,0px)');
 	ball.setAttribute('style', 'top:' + y + 'px; left:' + x + 'px;');
 }
+
