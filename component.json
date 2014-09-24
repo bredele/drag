@@ -1,0 +1,9 @@
+{
+  "name": "drag",
+  "version": "0.0.0",
+  "main": "index.js",
+  "description": "motion fluid resistance",
+  "dependencies": {
+  	"bredele/air": "*"
+  }
+}
