@@ -7,7 +7,7 @@ fluid resistance (20 °C dray air by default).
 
 ## Example
 
-In the example above, we compute the drag forces for a ball of radius `15 cm` (and coefficient 0.47) in dry air (`20 °C`) and with a velocity of `10m.s-2`.
+In the example below, we compute the drag forces for a ball of radius `15 cm` (and coefficient 0.47) in dry air (`20 °C`) and with a velocity of `10m.s-2`.
 
 ```js
 var drag = require('drag');
